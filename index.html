@@ -49,11 +49,11 @@
 							</li>
 							<!-- <li class="nav-item">
 								<a class="nav-link" href="#video">VIDEO</a> -->
+							<li class="nav-item">
+								<a class="nav-link" href="#price">PRICING</a>
 								<li class="nav-item">
-									<a class="nav-link" href="#price">PRICING</a>
-									<li class="nav-item">
-										<a class="nav-link" href="#screen">SCREENSHOTS</a>
-										<!-- <li class="nav-item submenu dropdown">
+									<a class="nav-link" href="#screen">SCREENSHOTS</a>
+									<!-- <li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
@@ -66,18 +66,18 @@
 										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 									</ul>
 								</li>  -->
-										<!-- <li class="nav-item">
+									<!-- <li class="nav-item">
 											<a class="nav-link" href=#news>News</a>
 										</li> -->
-										<li class="nav-item">
-											<a class="nav-link" href="policies.html">Policies</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="terms.html">T&C</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#about">About Us</a>
-										</li>
+									<li class="nav-item">
+										<a class="nav-link" href="policies.html">Policies</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="terms.html">T&C</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#about">About Us</a>
+									</li>
 						</ul>
 					</div>
 				</div>
@@ -94,27 +94,29 @@
 					<div class="col-lg-9">
 						<h2>A Platform to
 							<br />Rent Netflix.</h2>
-						<p>Want Netflix? But too costly to afford. Use our platform to rent Netflix for your desired about of time and binge watch your favourite TV show easily and inexpensively.</p>
-						<p style="font-size: 30px; font-weight: bold; margin-top: 100px;">Launching on  <i class="fa fa-android" style="font-size: 35px;"></i> in..</p>
-						<p style="font-size: 7vh; font-weight: bold;  margin-top: -15px" id="timer"></p>
+						<p>Want Netflix? But too costly to afford. Use our platform to rent Netflix for your desired about of time and binge
+							watch your favourite TV show easily and inexpensively.</p>
+						<p style="font-size: 30px; font-weight: bold; margin-top: 100px;">Launching on <i class="fa fa-android" style="font-size: 35px;"></i>
+							in..</p>
+						<p style="width: 100% ; font-size: 40px; font-weight: bold;  margin-top: -15px" id="timer"></p>
 						<p style="margin-top: -20px">25th September 2018</p>
-					
+
 						<script>
 							var countDownDate = new Date("Sept 25, 2018 0:0:0").getTime();
-							var x = setInterval(function() {
-							  var now = new Date().getTime();
-							  var distance = countDownDate - now;
-							  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-							  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-							  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-							  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-							  document.getElementById("timer").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
-							  if (distance < 0) {
-								clearInterval(x);
-								document.getElementById("timer").innerHTML = "EXPIRED";
-							  }
+							var x = setInterval(function () {
+								var now = new Date().getTime();
+								var distance = countDownDate - now;
+								var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+								var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+								document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+								if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("timer").innerHTML = "EXPIRED";
+								}
 							}, 1000);
-							</script>
+						</script>
 					</div>
 					<div class="col-lg-3">
 						<div class="banner_map_img">
@@ -138,29 +140,37 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<center> <img src="img/icon/f-budget.png" alt="">
-						<h4>Budget Friendly</h4></center>
-						<p style="text-align: center">We prevent Netflix from leaving holes in your pocket. Our plans are affordable so that you can enjoy your favourite shows uninterruptedly.</p>
+							<h4>Budget Friendly</h4>
+						</center>
+						<p style="text-align: center">We prevent Netflix from leaving holes in your pocket. Our plans are affordable so that
+							you can enjoy your favourite shows uninterruptedly.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<center> <img src="img/icon/f-uhd.png" alt="">
-						<h4>Ultra-HD</h4></center>
-						<p style="text-align: center">All the accounts provided by us are premium Netflix accounts that stream Ultra-HD videos. We do not like to compromise on the quality.</p>
+							<h4>Ultra-HD</h4>
+						</center>
+						<p style="text-align: center">All the accounts provided by us are premium Netflix accounts that stream Ultra-HD videos.
+							We do not like to compromise on the quality.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<center> <img src="img/icon/f-rental.png" alt="">
-						<h4>3-Day rentals</h4></center>
-						<p style="text-align: center">Don't watch TV shows frequently except your favourite one? We have you covered. Rent a Netflix account for 3 days for as low as Rs. 50.</p>
+							<h4>3-Day rentals</h4>
+						</center>
+						<p style="text-align: center">Don't watch TV shows frequently except your favourite one? We have you covered. Rent
+							a Netflix account for 3 days for as low as Rs. 50.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<center> <img src="img/icon/f-month.png" alt="">
-						<h4>1-Month rentals</h4></center>	
-						<p style="text-align: center">We provide 1 month rental service too but with 1 profile for an individual who doesn't want to pay for all 4 profiles. At a low price of Rs. 229 per Profile.</p>
+							<h4>1-Month rentals</h4>
+						</center>
+						<p style="text-align: center">We provide 1 month rental service too but with 1 profile for an individual who doesn't
+							want to pay for all 4 profiles. At a low price of Rs. 229 per Profile.</p>
 					</div>
 				</div>
 			</div>
@@ -177,10 +187,10 @@
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="interior_text">
-						<h4>Rent Netflix with <font style="font-weight: bold">one</font> Click. No Bullshit.</h4>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
-							in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate
-							behavior is often laughed off.</p>
+						<h4>Rent Netflix with
+							<font style="font-weight: bold">single</font> click. No Bullshit.
+						</h4>
+						<p>Click on the payment button & get your account right away. No paperwork between you and your favourite show.</p>
 					</div>
 				</div>
 			</div>
@@ -194,10 +204,9 @@
 			<div class="interior_inner row">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="interior_text">
-						<h4>We Believe that Interior beautifies the Total Architecture</h4>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
-							in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate
-							behavior is often laughed off.</p>
+						<h4>We don't accept cards.</h4>
+						<p>Simple said, we try to keep the transactions straight forward and hassle-free. You can use your Paytm wallet or
+							even your Google Credits to make the payments. So, why wait? Get a subscription now.</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -214,119 +223,104 @@
 	</section>
 	<!--================End Interior Area =================-->
 
+	<section class="interior_area">
+		<div class="container">
+			<div class="interior_inner row">
+				<div class="col-lg-6">
+					<img class="img-fluid" src="img/banner/posters.png" alt="">
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<div class="interior_text">
+						<h4>Blogs and News.</h4>
+						<p>Know when to rent Netflix from our Platform, You will be notified when there a new Movie or a TV series is released.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!--================Price Area =================-->
 	<section class="price_area p_120" id="price">
 		<div class="container">
 			<div class="main_title">
 				<h2>Pricing Table</h2>
-				<p>Please note that the price mentioned here may vary periodically. Kindly check the latest pricing table before making a purchase.</p>
+				<p>Please note that the price mentioned here may vary periodically. Kindly check the latest pricing table before making
+					a purchase.</p>
 			</div>
 			<div class="price_item_inner row">
-				<div class="col-lg-4">
+				<div class="col-lg-6">
 					<div class="price_item">
 						<div class="price_head">
 							<div class="float-left">
-								<h3>Absolute Free</h3>
-								<p>For all the individuals</p>
+								<h3>
+									<font style="color: #131313; font-weight: bold">Monthly Rentals</font>
+								</h3>
+								<p>
+									<font style="color: #131313;">For people who want 1 or 2 Profiles</font>
+								</p>
 							</div>
 							<div class="float-right">
-								<h2>$0</h2>
+								<h2>1 Month</h2>
 							</div>
 						</div>
 						<div class="price_body">
 							<ul class="list">
 								<li>
-									2.5 GB Free Photos
+									1 Profile costs ₹229
 								</li>
 								<li>
-									Secure Online Transfer Indeed
+									2 Profile costs ₹450
 								</li>
 								<li>
-									Unlimited Styles for interface
+									3 Profile costs ₹650
 								</li>
 								<li>
-									Reliable Customer Service
-								</li>
-								<li>
-									Manual Backup Provided
+									All Accounts are Ultra-HD
 								</li>
 							</ul>
 						</div>
 						<!-- <div class="price_footer">
 							<a class="main_btn2" href="#">Purchase Plan</a>
 						</div> -->
-					</div>
+					</div>	
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-6">
 					<div class="price_item">
 						<div class="price_head">
 							<div class="float-left">
-								<h3>Premium</h3>
-								<p>For 1 step advanced</p>
+								<h3>
+									<font style="color: #131313; font-weight: bold">3 Days Rentals</font>
+								</h3>
+								<p>
+									<font style="color: #131313;">For people who wants to binge watch</font>
+								</p>
 							</div>
 							<div class="float-right">
-								<h2>$3.99</h2>
+								<h2>3 Days</h2>
 							</div>
 						</div>
 						<div class="price_body">
 							<ul class="list">
 								<li>
-									2.5 GB Free Photos
+									1 Profile costs ₹50
 								</li>
 								<li>
-									Secure Online Transfer Indeed
+									2 Profiles costs ₹100
 								</li>
 								<li>
-									Unlimited Styles for interface
+									3 Profiles costs ₹150
 								</li>
 								<li>
-									Reliable Customer Service
-								</li>
-								<li>
-									Manual Backup Provided
+									4 Profiles costs ₹200
 								</li>
 							</ul>
 						</div>
 						<!-- <div class="price_footer">
-							<a class="main_btn2" href="#">Purchase Plan</a>
-						</div> -->
+								<a class="main_btn2" href="#">Purchase Plan</a>
+							</div> -->
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="price_item">
-						<div class="price_head">
-							<div class="float-left">
-								<h3>Rents</h3>
-								<p>Netflix rents prices</p>
-							</div>
-							<div class="float-right">
-								<h2>1 Profile</h2>
-							</div>
-						</div>
-						<div class="price_body">
-							<ul class="list">
-								<li>
-									2.5 GB Free Photos
-								</li>
-								<li>
-									Secure Online Transfer Indeed
-								</li>
-								<li>
-									Unlimited Styles for interface
-								</li>
-								<li>
-									Reliable Customer Service
-								</li>
-								<li>
-									Manual Backup Provided
-								</li>
-							</ul>
-						</div>
-						<!-- <div class="price_footer">
-							<a class="main_btn2" href="#">Rent Now</a>
-						</div> -->
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>
@@ -337,8 +331,7 @@
 		<div class="container">
 			<div class="main_title">
 				<h2>Unique Screenshots</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua.
+				<p>Platfrom is still in development, Screenshots will update soon.
 				</p>
 			</div>
 			<div class="screenshot_inner owl-carousel">
@@ -364,18 +357,19 @@
 		<div class="container">
 			<div class="app_inner">
 				<h2>Do you like FreeFlix?</h2>
-				<p>Would you like to help us make FreeFlix better? Enroll now for FreeFlix beta testing and get your name in the contributors list of FreeFlix. Email us for more Information.</p>
+				<p>Would you like to help us make FreeFlix better? Enroll now for FreeFlix beta testing and get your name in the contributors
+					list of FreeFlix. Email us for more Information.</p>
 				<div class="app_btn_area">
 					<div class="app_btn">
 						<div class="media">
 							<div class="media-body">
 								<a href="mailto:incfreeflix@gmail.com?Subject=Rolling%20for%20Beta%20Testing">
 									<script>
-									$email_address='incfreeflix@gmail.com';
-									$subject='Subject';
-									$msg='msg mudafucka';
-									mail($email_address,$subject,$msg);
-										</script>
+										$email_address = 'incfreeflix@gmail.com';
+										$subject = 'Subject';
+										$msg = 'msg mudafucka';
+										mail($email_address, $subject, $msg);
+									</script>
 									<h4>
 										<center>Email Us</center>
 									</h4>
@@ -507,7 +501,9 @@
 									<i class="fa fa-youtube-play"></i>
 								</a>
 							</div>
-							<p>┌∩┐(◣_◢)┌∩┐<br/><font style="font-weight: bold">I am CEO, Bitch</font>.</p><br/><br/>
+							<p>┌∩┐(◣_◢)┌∩┐<br/>
+								<font style="font-weight: bold">I am CEO, Bitch</font>.
+							</p><br/><br/>
 						</aside>
 					</div>
 					<div class="col-lg-6">
@@ -532,7 +528,9 @@
 									<i class="fa fa-rocket"></i>
 								</a>
 							</div>
-							<p>I love to know more about Technology & Productivity. I like to stick to my discipline in whatever I do. I read, write & help people in my free time. Besides being the CFO of Freeflix, I run a website called Productivity Post where I guide people to be more productive & improve their lives.</p>
+							<p>I love to know more about Technology & Productivity. I like to stick to my discipline in whatever I do. I read,
+								write & help people in my free time. Besides being the CFO of Freeflix, I run a website called Productivity Post
+								where I guide people to be more productive & improve their lives.</p>
 						</aside>
 					</div>
 				</div>
@@ -589,7 +587,8 @@
 							</div>
 						</div>
 						<div class="col-md-12 text-right">
-							<a href="mailto:incfreeflix@gmail.com?Subject=To%20FreeFlix&body=*Wrtie your message here*" style="background: white; color:#131313" class="btn submit_btn">Send Message</a>
+							<a href="mailto:incfreeflix@gmail.com?Subject=To%20FreeFlix&body=*Wrtie your message here*" style="background: white; color:#131313"
+							 class="btn submit_btn">Send Message</a>
 						</div>
 					</form>
 				</div>
