@@ -615,7 +615,8 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
 	<script>
 		// Initialize Firebase
-		var config = {
+		function runFirebase() {
+			var config = {
 			apiKey: "AIzaSyBKd8PRFERVSji_WF5lQxlqNmGHJRj-rOU",
 			authDomain: "freeflix399.firebaseapp.com",
 			databaseURL: "https://freeflix399.firebaseio.com",
@@ -624,9 +625,6 @@
 			messagingSenderId: "661170191835"
 		};
 		firebase.initializeApp(config);
-	</script>
-	<script>
-		function runFirebase() {
 			var db = firebase.firestore();
 			db.collection("Users").doc("tester@gmail.com").set({
 				name: "Tester"
