@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body data-spy="scroll" data-target="#mainNav" data-offset="70">
+<body data-spy="scroll" data-target="#mainNav" data-offset="70" onload="runFirebase">
 
 	<!--================Header Menu Area =================-->
 	<header class="header_area">
@@ -94,7 +94,8 @@
 					<div class="col-lg-9">
 						<h2>A Platform to
 							<br />Rent Netflix.</h2>
-						<p>Want Netflix? But too costly to afford. Use our platform to rent Netflix for your desired amount of time and binge-watch your favorite TV show easily and inexpensively.</p>
+						<p>Want Netflix? But too costly to afford. Use our platform to rent Netflix for your desired amount of time and binge-watch
+							your favorite TV show easily and inexpensively.</p>
 						<p style="font-size: 30px; font-weight: bold; margin-top: 100px;">Launching on <i class="fa fa-android" style="font-size: 35px;"></i>
 							in..</p>
 						<p style="width: 100% ; font-size: 40px; font-weight: bold;  margin-top: -15px" id="timer"></p>
@@ -610,18 +611,34 @@
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBKd8PRFERVSji_WF5lQxlqNmGHJRj-rOU",
-    authDomain: "freeflix399.firebaseapp.com",
-    databaseURL: "https://freeflix399.firebaseio.com",
-    projectId: "freeflix399",
-    storageBucket: "freeflix399.appspot.com",
-    messagingSenderId: "661170191835"
-  };
-  firebase.initializeApp(config);
-</script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBKd8PRFERVSji_WF5lQxlqNmGHJRj-rOU",
+			authDomain: "freeflix399.firebaseapp.com",
+			databaseURL: "https://freeflix399.firebaseio.com",
+			projectId: "freeflix399",
+			storageBucket: "freeflix399.appspot.com",
+			messagingSenderId: "661170191835"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script>
+		function runFirebase() {
+			var db = firebase.firestore();
+			db.collection("Users").doc("tester@gmail.com").set({
+				name: "Tester"
+			}).then(function () {
+				console.log("Document successfully written!");
+			}).catch(function (error) {
+				console.error("Error writing document: ", error);
+			});
+			console.log("Hello There");
+			window.onload = runFirebase;
+		}
+	</script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
